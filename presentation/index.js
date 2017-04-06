@@ -72,18 +72,24 @@ export default class Presentation extends React.Component {
                   </Fill>
               </Fill>
               <Fill>
-                <BlockQuote>
-                  <Quote textColor="secondary">DevPoint Labs</Quote>
-                  <Cite>Lead Full-Time Instructor</Cite>
-                </BlockQuote>
-                <BlockQuote>
-                  <Quote textColor="secondary">Useable</Quote>
-                  <Cite>Sr. Software Engineer / Equity Partner</Cite>
-                </BlockQuote>
-                <BlockQuote>
-                  <Quote textColor="secondary">Cottonwood Coding</Quote>
-                  <Cite>Co-Founder</Cite>
-                </BlockQuote>
+                <Appear>
+                  <BlockQuote>
+                    <Quote textColor="secondary">DevPoint Labs</Quote>
+                    <Cite>Lead Full-Time Instructor</Cite>
+                  </BlockQuote>
+                </Appear>
+                <Appear>
+                  <BlockQuote>
+                    <Quote textColor="secondary">Useable</Quote>
+                    <Cite>Sr. Software Engineer / Equity Partner</Cite>
+                  </BlockQuote>
+                </Appear>
+                <Appear>
+                  <BlockQuote>
+                    <Quote textColor="secondary">Cottonwood Coding</Quote>
+                    <Cite>Co-Founder</Cite>
+                  </BlockQuote>
+                </Appear>
               </Fill>
             </Layout>
           </Slide>
