@@ -1,4 +1,4 @@
-# Spectacle Boilerplate
+# Jake Sorce - DPL Launch Night Slide Deck
 
 ## Reference
 
@@ -6,13 +6,13 @@ The Spectacle core API is available at [https://github.com/FormidableLabs/specta
 
 ## Development
 
-After downloading the boilerplate, your first order of business is to open terminal and run `npm install`
+After downloding, your first order of business is to open terminal and run `yarn install`
 
 Next, run `rm -R .git` to remove the existing version control.
 
-Then, to start up the local server, run `npm start`
+Then, to start up the local server, run `yarn start`
 
-Open a browser and hit [http://localhost:3000](http://localhost:3000), and we are ready to roll
+Open a browser and hit [http://localhost:4000](http://localhost:4000), and we are ready to roll
 
 ## Build & Deployment
 
