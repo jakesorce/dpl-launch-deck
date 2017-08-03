@@ -1,6 +1,7 @@
 // Import React
 import React from "react";
 import App from './App';
+import dpl from '../assets/dpl2017.png';
 
 // Import Spectacle Core tags
 import {
@@ -47,7 +48,17 @@ const images = {
   neumont: require("../assets/neumont.jpg"),
   typing: require("../assets/typing.gif"),
   neverGiveUp: require("../assets/never-give-up.jpg"),
+  sheldon: require("../assets/sheldon.gif"),
+  dpllogo: require("../assets/logo.png"),
+  confidence: require('../assets/tenor.gif'),
+  jakedave: require('../assets/jakedave.jpg'),
+  jakemal: require('../assets/jakemal.jpg'),
+  ulogo: require('../assets/ulogo.jpg'),
 };
+
+const videos = {
+  coding: require("../assets/coding-students.mp4"),
+}
 
 preloader(images);
 
@@ -61,40 +72,58 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
+          <Slide transition={["zoom"]} bgColor="white">
+            <Layout>
+              <Fill>
+                <Heading caps center textColor="black">
+                  <Fill>
+                    <Image src={images.dpllogo.replace("/", "")} />
+                  </Fill>
+                  First Things First.
+                </Heading>
+              </Fill>
+            </Layout>
+          </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Layout>
               <Fill>
-                <Heading caps textColor="white"> 
+                <Heading caps center textColor="white">
+                  CONGRATS STUDENTS!!!
+                </Heading>
+              </Fill>
+              </Layout>
+              <Fill>
+                <Image center src={images.sheldon.replace("/", "")} />
+              </Fill>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="primary">
+            <Layout>
+              <Fill>
+                <Heading caps textColor="white">
                   Jake Sorce
                 </Heading>
-                  <Fill>
-                    <Image height="300" width="300" src={images.nerds.replace("/", "")} />
-                  </Fill>
+                <Fill>
+                  <Image height="300" width="300" src={images.nerds.replace("/", "")} />
+                </Fill>
               </Fill>
               <Fill>
                 <Appear>
                   <BlockQuote>
-                    <Quote textColor="secondary">DevPoint Labs</Quote>
-                    <Cite>Lead Full-Time Instructor</Cite>
+                    <Quote textColor="#8168B1">DevPoint Studios</Quote>
+                    <Cite>CTO</Cite>
                   </BlockQuote>
                 </Appear>
                 <Appear>
                   <BlockQuote>
-                    <Quote textColor="secondary">Useable</Quote>
-                    <Cite>Sr. Software Engineer / Equity Partner</Cite>
-                  </BlockQuote>
-                </Appear>
-                <Appear>
-                  <BlockQuote>
-                    <Quote textColor="secondary">Cottonwood Coding</Quote>
-                    <Cite>Co-Founder</Cite>
+                    <Quote textColor="#8168B1">DevPoint Labs</Quote>
+                    <Cite>Lead Instructor</Cite>
                   </BlockQuote>
                 </Appear>
               </Fill>
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
-            <Heading textColor="white">Writing Code Since #2011</Heading>
+            <Heading textColor="white">Professionally Writing Code Since #2011</Heading>
             <br />
             <Appear>
                <Fill>
@@ -103,11 +132,6 @@ export default class Presentation extends React.Component {
                 <Image height="100" width="100" src={images.neumont.replace("/", "")} />
                 <Image style={{ marginRight: '5px' }} height="100" width="100" src={images.redux.replace("/", "")} />
                 <Image height="100" width="100" src={images.js.replace("/", "")} />
-              </Fill>
-            </Appear>
-            <Appear>
-              <Fill>
-                <Image height="300" width="300" src={images.nerds.replace("/", "")} />
               </Fill>
             </Appear>
           </Slide>
@@ -123,63 +147,66 @@ export default class Presentation extends React.Component {
             <Heading>Lessons I've Learned</Heading>
             <Appear>
               <List textAlign='center'>
-                <ListItem>1. Practice Makes Improvement</ListItem>
+                <ListItem textColor='#8168B1'>1. Confidence Is Key.</ListItem>
               </List>
             </Appear>
             <Appear>
               <List textAlign='center'>
-                <ListItem>2. Fall in Love With Practice</ListItem>
+                <ListItem textColor='#8168B1'>2. Find The Right Partnerships.</ListItem>
               </List>
             </Appear>
             <Appear>
               <List textAlign='center'>
-                <ListItem>3. Never Give Up</ListItem>
+                <ListItem textColor='#8168B1'>3. Practice Your A.B.C.s!</ListItem>
+              </List>
+            </Appear>
+            <Appear>
+              <List textAlign='center' color='#8168B1'>
+                <ListItem textColor='#8168B1'>4. Give Back && Teach</ListItem>
               </List>
             </Appear>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" align='center center'>
-            <Heading>Practice Makes Improvement</Heading>
-            <hr />
-            <List textAlign='center' textColor='white'>
-              <ListItem>Practice Your ABC's</ListItem>
-            </List>
+            <Heading>Confidence Is Key.</Heading>
             <Appear>
-              <List textAlign='center'>
-                <ListItem>Always</ListItem>
-              </List>
+              <Fill>
+                <Image src={images.confidence.replace("/", "")} />
+              </Fill>
             </Appear>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="white" align='center center'>
+            <Heading textColor='black'>Find The Right Partnerships.</Heading>
+            <br />
             <Appear>
-              <List textAlign='center'>
-                <ListItem>Be</ListItem>
-              </List>
-            </Appear>
-            <Appear>
-              <List textAlign='center'>
-                <ListItem>Coding</ListItem>
-              </List>
+              <Fill>
+                <Image height='200px' src={images.jakemal.replace("/", "")} />
+                <Image height='200px' src={images.jakedave.replace("/", "")} />
+                <Image height='200px' src={images.dpllogo.replace("/", "")} />
+                <Image height='200px' src={images.ulogo.replace("/", "")} />
+              </Fill>
             </Appear>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" align='center center'>
-            <Heading>Fall In Love With Practice</Heading>
-            <Image height="300" width="450" src={images.typing.replace("/", "")} />
-            <hr />
-            <Text textColor='white' textAlign='center'>
-              The elite software developer is the programmer who spends all day writing code at work, 
-              and after leaving work they write open source software / work on side projects on their own time.
-            </Text>
+            <Heading textColor='white'>Always. Be. Coding.</Heading>
+            <br />
+            <Fill>
+              <video preLoad="true" autoPlay="true" loop="true" width="100%">
+                <source src={videos.coding.replace("/", "")} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </Fill>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" align='center center'>
-            <Heading>Never Give Up</Heading>
-            <Image height="300" width="450" src={images.neverGiveUp.replace("/", "")} />
-            <Appear>
-              <hr />
-            </Appear>
+            <Heading>Give Back && Teach.</Heading>
+            <br />
             <Appear>
               <BlockQuote>
-                <Quote textColor="secondary">It's hard to beat a person that never gives up.</Quote>
-                <Cite>Babe Ruth</Cite>
+                <Quote textColor="#8168B1">We make a living by what we get, but we make a life by what we give.</Quote>
+                <Cite>Winston Churchill</Cite>
               </BlockQuote>
             </Appear>
+          </Slide>
+          <Slide bgImage={dpl}>
           </Slide>
         </Deck>
       </Spectacle>

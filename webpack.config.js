@@ -23,7 +23,10 @@ module.exports = {
     loaders: [{
       test: /\.md$/,
       loader: "html-loader!markdown-loader?gfm=false"
-    }, 
+    },
+    { test: /\.swf$/,
+      loader: "file?name=[path][name].[ext]"
+    },
     {
       test: /\.html$/,
       loader: 'html-loader?attrs[]=video:src'

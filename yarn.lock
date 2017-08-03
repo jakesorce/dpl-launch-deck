@@ -2222,7 +2222,7 @@ he@^0.5.0:
   resolved "https://registry.yarnpkg.com/he/-/he-0.5.0.tgz#2c05ffaef90b68e860f3fd2b54ef580989277ee2"
 
 highcharts@^5.0.0:
-  version v5.0.6
+  version "5.0.6"
   resolved "https://registry.yarnpkg.com/highcharts/-/highcharts-5.0.6.tgz#9fba0fbd38c34cca23ffffa8898d39eb23fd35ba"
 
 history@^2.1.1:
@@ -3907,6 +3907,10 @@ react-redux@^4.0.0:
     invariant "^2.0.0"
     lodash "^4.2.0"
     loose-envify "^1.1.0"
+
+react-swf@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/react-swf/-/react-swf-1.0.6.tgz#3d32b7034bb5e333243c1a70e5ae598ee49cbcb8"
 
 react-transform-catch-errors@^1.0.2:
   version "1.0.2"
